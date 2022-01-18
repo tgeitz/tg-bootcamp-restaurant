@@ -1,5 +1,5 @@
 <template>
-    <div class="location-button">
+    <div class="location-button" :style="{backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(' + backgroundImageUrl + ')'}">
         <h1> {{ locationName }}</h1>
     </div>
 </template>
@@ -7,8 +7,8 @@
 <script>
 export default {
     props: {
-        locationSlug: { type: String, required: true },
-        locationName: { type: String, required: true }
+        locationName: { type: String, required: true },
+        backgroundImageUrl: { type: String, default: '' }
     }
 }
 </script>
@@ -23,5 +23,13 @@ export default {
         justify-content: center;
         align-items: center;
         text-align: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .location-button h1 {
+        color: white;
     }
 </style>

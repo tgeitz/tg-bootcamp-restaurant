@@ -2,7 +2,9 @@
     <div class="container">
         <div class="nav">
             <ul class="nav-links">
-                <li class="nav-link">Home</li>
+                <router-link to="/">
+                    <li class="nav-link">Home</li>
+                </router-link>
             </ul>
         </div>
 
@@ -40,6 +42,7 @@ export default {
         width: 100%;
         z-index: 50;
         background-color: #91c9a2;
+        box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.2);
     }
 
     .nav ul {
