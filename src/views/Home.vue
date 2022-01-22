@@ -27,7 +27,12 @@
                 <home-location-button class="location" :location-name="`Brandon's Location`" />
             </div>
             <div class="location-row">
-                <home-location-button class="location" :location-name="`Dan's Location`" />
+                <router-link to= "/locations/Dan/DanMenu">
+                    <home-location-button class="location"
+                        :location-name="`Dan's Location`"
+                        background-image-url="https://animalfair.com/wp-content/uploads/2014/03/500full1.jpg"
+                         />
+                </router-link>
                 <home-location-button class="location" :location-name="`John's Location`" />
             </div>
         </div>
