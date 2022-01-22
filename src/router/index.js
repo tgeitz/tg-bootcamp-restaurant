@@ -21,7 +21,7 @@ const routes = [
     component: DanMenu
   },
   {
-    path: '/locations/Brandon/Menu',
+    path: '/locations/brandon/Menu',
     name: "Brandon's Location Menu",
     component: BrandonMenu
   }
