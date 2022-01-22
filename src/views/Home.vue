@@ -24,7 +24,12 @@
             </div>
             <div class="location-row">
                 <home-location-button class="location" :location-name="`Arty's Location`" />
-                <home-location-button class="location" :location-name="`Brandon's Location`" />
+                <router-link to="/locations/brandon/menu">
+                    <home-location-button class="location" 
+                        :location-name="`Brandon's Location`"
+                        background-image-url="https://www.chicagotribune.com/resizer/M-y5GhubeWYO8w3hcubvpGQuTLI=/1400x0/top/cloudfront-us-east-1.images.arcpublishing.com/tronc/LY56OLHYNNHKHGUTOFD6J7MM5Y.jpg"
+                    />
+                </router-link>
             </div>
             <div class="location-row">
                 <router-link to="/locations/dan/Menu">
