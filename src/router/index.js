@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue';
 import TomMenu from '../views/locations/tom/Menu.vue';
 import DanMenu from '../views/locations/dan/Menu.vue';
+import BrandonMenu from '../views/locations/brandon/Menu.vue';
 
 const routes = [
   {
@@ -18,6 +19,11 @@ const routes = [
     path: '/locations/dan/Menu',
     name: "Dan's Location Menu",
     component: DanMenu
+  },
+  {
+    path: '/locations/brandon/Menu',
+    name: "Brandon's Location Menu",
+    component: BrandonMenu
   }
 ]
 
