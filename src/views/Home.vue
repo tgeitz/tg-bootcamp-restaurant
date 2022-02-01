@@ -23,7 +23,13 @@
                 </router-link>
             </div>
             <div class="location-row">
-                <home-location-button class="location" :location-name="`Arty's Location`" />
+                <router-link to="/locations/arty/Menu">
+                    <home-location-button class="location" :location-name="`Arty's Location`" 
+                    background-image-url="https://th.bing.com/th/id/R.c32505385b23d0e751635b19ca385dd3?rik=WKT%2bMYpAPJT1sg&riu=http%3a%2f%2fwallsdesk.com%2fwp-content%2fuploads%2f2016%2f10%2fBeef-Steak-Wallpapers-HD.jpg&ehk=RYpVpuOBFrFbTJQXEM657H%2bIJvvoieAUPxIWQ48NFqE%3d&risl=&pid=ImgRaw&r=0"
+                    />
+                </router-link>
+            </div>
+            <div class="location-row">
                 <router-link to="/locations/brandon/menu">
                     <home-location-button class="location" 
                         :location-name="`Brandon's Location`"
