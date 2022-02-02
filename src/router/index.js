@@ -19,7 +19,12 @@ const routes = [
     path: '/locations/dan/Menu',
     name: "Dan's Location Menu",
     component: DanMenu
-  }
+  },
+  {
+    path: '/locations/brandon/Menu',
+    name: "Brandon's Location Menu",
+    component: BrandonMenu
+  },
   {
     path: '/locations/arty/Menu',
     name: "Arty's Location Menu",
